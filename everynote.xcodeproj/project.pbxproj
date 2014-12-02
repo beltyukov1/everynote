@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0052031A2E5FB60018D3CD /* NotesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0052021A2E5FB60018D3CD /* NotesListTableViewController.swift */; };
+		FA0052051A2E5FE30018D3CD /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0052041A2E5FE30018D3CD /* AddNoteViewController.swift */; };
 		FA7D81151A2E0590001D2BA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D81141A2E0590001D2BA9 /* AppDelegate.swift */; };
 		FA7D81181A2E0590001D2BA9 /* everynote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA7D81161A2E0590001D2BA9 /* everynote.xcdatamodeld */; };
 		FA7D811A1A2E0590001D2BA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D81191A2E0590001D2BA9 /* ViewController.swift */; };
@@ -28,7 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA7D810F1A2E0590001D2BA9 /* everynote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = everynote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0052021A2E5FB60018D3CD /* NotesListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotesListTableViewController.swift; path = controllers/NotesListTableViewController.swift; sourceTree = "<group>"; };
+		FA0052041A2E5FE30018D3CD /* AddNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddNoteViewController.swift; path = controllers/AddNoteViewController.swift; sourceTree = "<group>"; };
+		FA7D810F1A2E0590001D2BA9 /* EveryNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveryNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7D81131A2E0590001D2BA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7D81141A2E0590001D2BA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA7D81171A2E0590001D2BA9 /* everynote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = everynote.xcdatamodel; sourceTree = "<group>"; };
@@ -36,7 +40,7 @@
 		FA7D811C1A2E0590001D2BA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA7D811E1A2E0590001D2BA9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA7D81211A2E0590001D2BA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		FA7D81271A2E0590001D2BA9 /* everynoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = everynoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7D81271A2E0590001D2BA9 /* EveryNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EveryNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7D812C1A2E0590001D2BA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7D812D1A2E0590001D2BA9 /* everynoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = everynoteTests.swift; sourceTree = "<group>"; };
 		FA7D81371A2E1CFD001D2BA9 /* everynote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "everynote-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -74,8 +78,8 @@
 		FA7D81101A2E0590001D2BA9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA7D810F1A2E0590001D2BA9 /* everynote.app */,
-				FA7D81271A2E0590001D2BA9 /* everynoteTests.xctest */,
+				FA7D810F1A2E0590001D2BA9 /* EveryNote.app */,
+				FA7D81271A2E0590001D2BA9 /* EveryNoteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +132,8 @@
 			children = (
 				FA7D813C1A2E1E8B001D2BA9 /* ABENBrowserViewController.h */,
 				FA7D813D1A2E1E8B001D2BA9 /* ABENBrowserViewController.m */,
+				FA0052021A2E5FB60018D3CD /* NotesListTableViewController.swift */,
+				FA0052041A2E5FE30018D3CD /* AddNoteViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -149,7 +155,7 @@
 			);
 			name = EveryNote;
 			productName = everynote;
-			productReference = FA7D810F1A2E0590001D2BA9 /* everynote.app */;
+			productReference = FA7D810F1A2E0590001D2BA9 /* EveryNote.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FA7D81261A2E0590001D2BA9 /* EveryNoteTests */ = {
@@ -167,7 +173,7 @@
 			);
 			name = EveryNoteTests;
 			productName = everynoteTests;
-			productReference = FA7D81271A2E0590001D2BA9 /* everynoteTests.xctest */;
+			productReference = FA7D81271A2E0590001D2BA9 /* EveryNoteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -234,8 +240,10 @@
 			files = (
 				FA7D811A1A2E0590001D2BA9 /* ViewController.swift in Sources */,
 				FA7D81151A2E0590001D2BA9 /* AppDelegate.swift in Sources */,
+				FA0052051A2E5FE30018D3CD /* AddNoteViewController.swift in Sources */,
 				FA7D81181A2E0590001D2BA9 /* everynote.xcdatamodeld in Sources */,
 				FA7D813E1A2E1E8B001D2BA9 /* ABENBrowserViewController.m in Sources */,
+				FA0052031A2E5FB60018D3CD /* NotesListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = everynote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -373,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = everynote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

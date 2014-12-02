@@ -1,10 +1,104 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LCc-6y-KgO">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Notes-->
+        <scene sceneID="B4N-KA-vEN">
+            <objects>
+                <tableViewController id="ELa-3A-1kr" customClass="NotesListTableViewController" customModule="EveryNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LLH-xv-pQl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Note Cell" textLabel="29E-3g-3vK" style="IBUITableViewCellStyleDefault" id="iDB-P0-16k">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iDB-P0-16k" id="d2r-kH-J52">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="29E-3g-3vK">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ELa-3A-1kr" id="EXD-RJ-HBH"/>
+                            <outlet property="delegate" destination="ELa-3A-1kr" id="DT2-SW-0SM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Notes" id="ctR-x2-C8p">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8JJ-pB-eei">
+                            <connections>
+                                <segue destination="Z2C-ow-Pmk" kind="show" identifier="Add Note Segue" id="EWS-9r-bee"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cym-XQ-hsy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="386"/>
+        </scene>
+        <!--Add Note-->
+        <scene sceneID="Ull-Sq-obm">
+            <objects>
+                <tableViewController id="Z2C-ow-Pmk" customClass="AddNoteViewController" customModule="EveryNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Gw6-ne-as4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Title" id="Ukf-3u-bL8">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aSF-2x-KpQ">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aSF-2x-KpQ" id="zMX-4d-Czl">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sjh-Kn-95l">
+                                                    <rect key="frame" x="8" y="6" width="584" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sjh-Kn-95l" firstAttribute="leading" secondItem="zMX-4d-Czl" secondAttribute="leadingMargin" id="1Ls-f5-vA4"/>
+                                                <constraint firstItem="sjh-Kn-95l" firstAttribute="top" secondItem="zMX-4d-Czl" secondAttribute="topMargin" constant="-2" id="4ci-bF-rW3"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="sjh-Kn-95l" secondAttribute="bottom" constant="-0.5" id="c1W-tM-FgI"/>
+                                                <constraint firstItem="sjh-Kn-95l" firstAttribute="trailing" secondItem="zMX-4d-Czl" secondAttribute="trailingMargin" id="fad-3S-1Mb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Z2C-ow-Pmk" id="z4p-tW-fcR"/>
+                            <outlet property="delegate" destination="Z2C-ow-Pmk" id="R3B-kT-ILB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Note" id="h8x-he-gwC">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="opm-fF-3KK">
+                            <connections>
+                                <action selector="save:" destination="Z2C-ow-Pmk" id="RJp-Pd-hmS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="titleField" destination="sjh-Kn-95l" id="s40-Vg-kcs"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S93-Hq-q4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2642" y="386"/>
+        </scene>
         <!--Browser View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -61,6 +155,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="433" y="386"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="j1p-Jf-EnF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LCc-6y-KgO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xAU-BM-Szn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ELa-3A-1kr" kind="relationship" relationship="rootViewController" id="OHw-lE-yPy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20z-ZC-4D0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1146" y="386"/>
         </scene>
     </scenes>
 </document>
