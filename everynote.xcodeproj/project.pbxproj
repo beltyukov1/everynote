@@ -14,6 +14,7 @@
 		FA7D811F1A2E0590001D2BA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7D811E1A2E0590001D2BA9 /* Images.xcassets */; };
 		FA7D81221A2E0590001D2BA9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7D81201A2E0590001D2BA9 /* LaunchScreen.xib */; };
 		FA7D812E1A2E0590001D2BA9 /* everynoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D812D1A2E0590001D2BA9 /* everynoteTests.swift */; };
+		FA7D813E1A2E1E8B001D2BA9 /* ABENBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7D813D1A2E1E8B001D2BA9 /* ABENBrowserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,9 @@
 		FA7D81271A2E0590001D2BA9 /* everynoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = everynoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7D812C1A2E0590001D2BA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7D812D1A2E0590001D2BA9 /* everynoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = everynoteTests.swift; sourceTree = "<group>"; };
+		FA7D81371A2E1CFD001D2BA9 /* everynote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "everynote-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA7D813C1A2E1E8B001D2BA9 /* ABENBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABENBrowserViewController.h; path = controllers/ABENBrowserViewController.h; sourceTree = "<group>"; };
+		FA7D813D1A2E1E8B001D2BA9 /* ABENBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABENBrowserViewController.m; path = controllers/ABENBrowserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		FA7D81111A2E0590001D2BA9 /* everynote */ = {
 			isa = PBXGroup;
 			children = (
+				FA7D813B1A2E1D0D001D2BA9 /* controllers */,
 				FA7D81141A2E0590001D2BA9 /* AppDelegate.swift */,
 				FA7D81191A2E0590001D2BA9 /* ViewController.swift */,
 				FA7D811B1A2E0590001D2BA9 /* Main.storyboard */,
@@ -86,6 +91,7 @@
 				FA7D81201A2E0590001D2BA9 /* LaunchScreen.xib */,
 				FA7D81161A2E0590001D2BA9 /* everynote.xcdatamodeld */,
 				FA7D81121A2E0590001D2BA9 /* Supporting Files */,
+				FA7D81371A2E1CFD001D2BA9 /* everynote-Bridging-Header.h */,
 			);
 			path = everynote;
 			sourceTree = "<group>";
@@ -113,6 +119,15 @@
 				FA7D812C1A2E0590001D2BA9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA7D813B1A2E1D0D001D2BA9 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D813C1A2E1E8B001D2BA9 /* ABENBrowserViewController.h */,
+				FA7D813D1A2E1E8B001D2BA9 /* ABENBrowserViewController.m */,
+			);
+			name = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +233,7 @@
 				FA7D811A1A2E0590001D2BA9 /* ViewController.swift in Sources */,
 				FA7D81151A2E0590001D2BA9 /* AppDelegate.swift in Sources */,
 				FA7D81181A2E0590001D2BA9 /* everynote.xcdatamodeld in Sources */,
+				FA7D813E1A2E1E8B001D2BA9 /* ABENBrowserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +358,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = everynote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "everynote/everynote-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,9 +371,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = everynote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "everynote/everynote-Bridging-Header.h";
 			};
 			name = Release;
 		};
