@@ -65,8 +65,8 @@
 		FA7D81061A2E0590001D2BA9 = {
 			isa = PBXGroup;
 			children = (
-				FA7D81111A2E0590001D2BA9 /* everynote */,
-				FA7D812A1A2E0590001D2BA9 /* everynoteTests */,
+				FA7D81111A2E0590001D2BA9 /* EveryNote */,
+				FA7D812A1A2E0590001D2BA9 /* EveryNoteTests */,
 				FA7D81101A2E0590001D2BA9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,7 +80,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA7D81111A2E0590001D2BA9 /* everynote */ = {
+		FA7D81111A2E0590001D2BA9 /* EveryNote */ = {
 			isa = PBXGroup;
 			children = (
 				FA7D813B1A2E1D0D001D2BA9 /* controllers */,
@@ -93,6 +93,7 @@
 				FA7D81121A2E0590001D2BA9 /* Supporting Files */,
 				FA7D81371A2E1CFD001D2BA9 /* everynote-Bridging-Header.h */,
 			);
+			name = EveryNote;
 			path = everynote;
 			sourceTree = "<group>";
 		};
@@ -104,12 +105,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FA7D812A1A2E0590001D2BA9 /* everynoteTests */ = {
+		FA7D812A1A2E0590001D2BA9 /* EveryNoteTests */ = {
 			isa = PBXGroup;
 			children = (
 				FA7D812D1A2E0590001D2BA9 /* everynoteTests.swift */,
 				FA7D812B1A2E0590001D2BA9 /* Supporting Files */,
 			);
+			name = EveryNoteTests;
 			path = everynoteTests;
 			sourceTree = "<group>";
 		};
@@ -133,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA7D810E1A2E0590001D2BA9 /* everynote */ = {
+		FA7D810E1A2E0590001D2BA9 /* EveryNote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA7D81311A2E0590001D2BA9 /* Build configuration list for PBXNativeTarget "everynote" */;
+			buildConfigurationList = FA7D81311A2E0590001D2BA9 /* Build configuration list for PBXNativeTarget "EveryNote" */;
 			buildPhases = (
 				FA7D810B1A2E0590001D2BA9 /* Sources */,
 				FA7D810C1A2E0590001D2BA9 /* Frameworks */,
@@ -145,14 +147,14 @@
 			);
 			dependencies = (
 			);
-			name = everynote;
+			name = EveryNote;
 			productName = everynote;
 			productReference = FA7D810F1A2E0590001D2BA9 /* everynote.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FA7D81261A2E0590001D2BA9 /* everynoteTests */ = {
+		FA7D81261A2E0590001D2BA9 /* EveryNoteTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA7D81341A2E0590001D2BA9 /* Build configuration list for PBXNativeTarget "everynoteTests" */;
+			buildConfigurationList = FA7D81341A2E0590001D2BA9 /* Build configuration list for PBXNativeTarget "EveryNoteTests" */;
 			buildPhases = (
 				FA7D81231A2E0590001D2BA9 /* Sources */,
 				FA7D81241A2E0590001D2BA9 /* Frameworks */,
@@ -163,7 +165,7 @@
 			dependencies = (
 				FA7D81291A2E0590001D2BA9 /* PBXTargetDependency */,
 			);
-			name = everynoteTests;
+			name = EveryNoteTests;
 			productName = everynoteTests;
 			productReference = FA7D81271A2E0590001D2BA9 /* everynoteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -186,7 +188,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FA7D810A1A2E0590001D2BA9 /* Build configuration list for PBXProject "everynote" */;
+			buildConfigurationList = FA7D810A1A2E0590001D2BA9 /* Build configuration list for PBXProject "EveryNote" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -199,8 +201,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA7D810E1A2E0590001D2BA9 /* everynote */,
-				FA7D81261A2E0590001D2BA9 /* everynoteTests */,
+				FA7D810E1A2E0590001D2BA9 /* EveryNote */,
+				FA7D81261A2E0590001D2BA9 /* EveryNoteTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,7 +252,7 @@
 /* Begin PBXTargetDependency section */
 		FA7D81291A2E0590001D2BA9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FA7D810E1A2E0590001D2BA9 /* everynote */;
+			target = FA7D810E1A2E0590001D2BA9 /* EveryNote */;
 			targetProxy = FA7D81281A2E0590001D2BA9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -416,7 +418,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA7D810A1A2E0590001D2BA9 /* Build configuration list for PBXProject "everynote" */ = {
+		FA7D810A1A2E0590001D2BA9 /* Build configuration list for PBXProject "EveryNote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA7D812F1A2E0590001D2BA9 /* Debug */,
@@ -425,21 +427,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA7D81311A2E0590001D2BA9 /* Build configuration list for PBXNativeTarget "everynote" */ = {
+		FA7D81311A2E0590001D2BA9 /* Build configuration list for PBXNativeTarget "EveryNote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA7D81321A2E0590001D2BA9 /* Debug */,
 				FA7D81331A2E0590001D2BA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		FA7D81341A2E0590001D2BA9 /* Build configuration list for PBXNativeTarget "everynoteTests" */ = {
+		FA7D81341A2E0590001D2BA9 /* Build configuration list for PBXNativeTarget "EveryNoteTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA7D81351A2E0590001D2BA9 /* Debug */,
 				FA7D81361A2E0590001D2BA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

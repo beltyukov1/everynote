@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FA7D810E1A2E0590001D2BA9"
-               BuildableName = "everynote.app"
-               BlueprintName = "everynote"
-               ReferencedContainer = "container:everynote.xcodeproj">
+               BuildableName = "EveryNote.app"
+               BlueprintName = "EveryNote"
+               ReferencedContainer = "container:EveryNote.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FA7D81261A2E0590001D2BA9"
-               BuildableName = "everynoteTests.xctest"
-               BlueprintName = "everynoteTests"
-               ReferencedContainer = "container:everynote.xcodeproj">
+               BuildableName = "EveryNoteTests.xctest"
+               BlueprintName = "EveryNoteTests"
+               ReferencedContainer = "container:EveryNote.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FA7D81261A2E0590001D2BA9"
-               BuildableName = "everynoteTests.xctest"
-               BlueprintName = "everynoteTests"
-               ReferencedContainer = "container:everynote.xcodeproj">
+               BuildableName = "EveryNoteTests.xctest"
+               BlueprintName = "EveryNoteTests"
+               ReferencedContainer = "container:EveryNote.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FA7D810E1A2E0590001D2BA9"
-            BuildableName = "everynote.app"
-            BlueprintName = "everynote"
-            ReferencedContainer = "container:everynote.xcodeproj">
+            BuildableName = "EveryNote.app"
+            BlueprintName = "EveryNote"
+            ReferencedContainer = "container:EveryNote.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FA7D810E1A2E0590001D2BA9"
-            BuildableName = "everynote.app"
-            BlueprintName = "everynote"
-            ReferencedContainer = "container:everynote.xcodeproj">
+            BuildableName = "EveryNote.app"
+            BlueprintName = "EveryNote"
+            ReferencedContainer = "container:EveryNote.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FA7D810E1A2E0590001D2BA9"
-            BuildableName = "everynote.app"
-            BlueprintName = "everynote"
-            ReferencedContainer = "container:everynote.xcodeproj">
+            BuildableName = "EveryNote.app"
+            BlueprintName = "EveryNote"
+            ReferencedContainer = "container:EveryNote.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
